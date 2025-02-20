@@ -43,9 +43,11 @@ RUN git clone https://github.com/wufan-tb/yolo_slowfast.git . && \
 
 # Create directory for DeepSort checkpoint
 RUN mkdir -p deep_sort/deep_sort/deep/checkpoint/
+RUN mkdir -p /files
 
 # Copy deep sort parameters
 COPY ./deepsort_parameters deep_sort/deep_sort/deep/checkpoint/
+COPY ./data /files
 
 # Set environment variables for CUDA
 ENV CUDA_HOME=/usr/local/cuda
