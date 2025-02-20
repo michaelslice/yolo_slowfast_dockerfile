@@ -1,5 +1,7 @@
 # YOLO SlowFast Dockerfile
 
+<img src="./output.gif"/>
+
 ## Prerequisites  
 - Install [Docker](https://www.docker.com/).
 - Ensure you have an NVIDIA GPU.
